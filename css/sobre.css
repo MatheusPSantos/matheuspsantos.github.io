@@ -1,0 +1,207 @@
+/**
+ *  Unect Júnior - 2018
+ * @matheuspsantos
+ */
+
+/*  
+*   Página Sobre   
+*/
+
+.introducao-sobre {
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    background-image: url('../img/sobre/bg.png');
+    background-size: cover;
+}
+
+.introducao-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+}
+
+/*  História Unect*/
+
+.historia {
+    width: 100%;
+    height: 600px;
+    background-color: #4060a5;
+}
+
+.historia h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.historia p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.historia .redes-sociais {
+    margin-top: 40px;
+    margin-left: 320px;
+}
+
+.historia .redes-sociais img {
+    height: 60px;
+    margin-top: 20px;
+}
+
+
+/*  Unectianos  */
+
+.unectianos {
+    width: 100%;
+    height: 600px;
+    background: #fff;
+}
+
+.unectianos h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #314a7e;
+}
+
+.unectianos p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #314a7e;
+}
+
+.unectianos .diretoria {
+    height: 150px;
+    margin-top: 40px;
+    background: #cecece;
+}
+
+.unectianos .diretoria img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.unectianos .diretoria:hover img {
+    display: none;
+    transition: ease all 0.5s;
+}
+
+.unectianos .diretoria .overlay {
+    background-color: #5986e4;
+    margin-top: -150px;
+    width: 100%;
+    height: 150px;
+}
+
+.unectianos .diretoria .overlay .texto {
+    color: #fff;
+    display: none;
+    transition: ease all 2s;
+}
+
+.unectianos .diretoria:hover .overlay .texto {
+    display: inherit;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    transition: ease all 2s;
+}
+
+.unectianos .diretoria:hover .overlay {
+    margin-top: 0px;
+}
+/*  Nossa Casa  */
+
+.nossa-casa {
+    width: 100%;
+    height: 600px;
+    background-color: #314a7e;
+}
+
+.nossa-casa h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.nossa-casa p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.nossa-casa .video-nossa-casa {
+    margin-top: 80px;
+}
+
+.nossa-casa .video-nossa-casa iframe {
+    margin-left: 200px;    
+    background-color: #314a7e;
+}
+
+/* Responsividade para telas entre 959px e 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .historia .redes-sociais {
+        margin-top: 50px;
+        margin-left: 260px;
+    }
+    .historia .redes-sociais img {
+        height: 45px;
+    }
+    /* Nossa casa */
+    .nossa-casa .video-nossa-casa {
+        margin-top: 90px;
+    }
+    .nossa-casa .video-nossa-casa iframe {
+        margin-left: 100px;
+    }
+}
+
+/* Responsividade para telas com menos que 768px; */
+@media only screen and (max-width: 768px) {
+    /* História */
+    .historia .redes-sociais {
+        margin: 20px 5px;
+    }
+    .historia .redes-sociais img {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+    }
+    /* Unectinos */
+    .unectianos {
+        display: none;
+    }
+    /* Nossa casa */
+    .nossa-casa {
+        display: block;
+    }
+    .nossa-casa p {
+        margin-bottom: 50px;
+    }
+    .nossa-casa .video-nossa-casa {
+        width: 100%;
+    }
+    .nossa-casa .video-nossa-casa iframe {
+        margin: 0;
+        width: 300px;
+        height: 200px;
+    }
+}

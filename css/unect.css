@@ -1,0 +1,261 @@
+/**
+ *  Unect Júnior - 2018
+ * @matheuspsantos
+ */
+
+ /* Estilização do site */
+ 
+body {
+    font-size: 18px;
+    font-family: Dosis, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*  Header  */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #314a7e;
+    transition: all ease 0.7s;
+}
+
+.header a img {
+    margin: 5px;
+    margin-left: 70px;
+    transition: all ease 0.7s;
+}
+
+/* menu que compacta */
+.header label {
+    margin: 0 40px 0 0;
+    font-size: 28px;
+    line-height: 70px;
+    width: 30px;
+    float: right;
+    display: none;
+}
+
+#toogle {
+    display: none;
+}
+/* fim do menu que compacta */
+.header-menu {
+    margin-top: 40px;
+    text-align: right;
+    transition: all ease 0.7s;
+}
+
+.header-menu ul li {
+    display: inline;
+    clear: right;
+}
+
+.header-menu a {
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    height: 20%;
+    transition: all ease 0.3s;
+}
+
+.header-menu a:hover {
+    box-shadow: 2px 4px 4px rgba(0,0,0,.3);
+}
+
+/* Menu diminui após a rolagem da página */
+.smallheader {
+    background-color: #00298098;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    transition: all ease 0.7s;
+}
+
+.smallheader a img {
+    margin-top: 15px;
+    margin-left: 10px;
+    transition: all ease 0.7s;
+}
+
+.smallheader .header-menu {
+    margin-top: 10px;
+    transition: all ease 0.7s;
+}
+
+/* menu que compacta */
+.smallheader label {
+    margin: 0 40px 0 0;
+    font-size: 28px;
+    line-height: 70px;
+    width: 30px;
+    float: right;
+    display: none;
+}
+
+#toogle {
+    display: none;
+}
+/* fim do menu que compacta */
+/*  Contato */
+
+.contato {
+    width: 100%;
+    height: 600px;
+    background-color: #314a7e;
+    color: #fff;
+}
+
+.contato h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;   
+}
+
+.contato p {
+    font-size: 20x;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/**** formulario *****/
+.contato form {
+    margin-top: 60px;
+}
+
+.contato form input {
+    width: 100%;
+    margin: 10px;
+    height: 40px;
+}
+
+.contato form textarea {
+    margin :10px;
+    width: 100%;
+    height: 100px;
+}
+
+.contato form .form-submit {
+    width: 100%;
+    margin: 10px;
+    border: none;
+    background-color: #5986e4;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.contato form .form-submit:hover {
+    background-color: green;
+}
+
+.contato .redes-sociais {
+    margin-top: 60px;
+    margin-left: 160px;
+}
+
+.contato .redes-sociais h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contato .redes-sociais img {
+    height: 60px;
+    margin-top: 40px;
+}
+
+.contato .endereco {
+    margin-top: 40px;  
+    margin-left: 160px;
+}
+
+.contato .endereco h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*  Rodapé  */
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-color: #5986e4;
+    color: #fff;
+}
+
+.rodape p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Responsividade para telas entre 959px e 768px */
+@media only screen and (min-width: 769px) and (max-width: 959px) {
+    .contato .redes-sociais img {
+        height: 45px;
+    }
+}
+
+/* Responsividade para telas inferiores a 768px */
+@media only screen and (max-width: 768px) {
+    /* menu que compacta */
+    .header label {
+        display: block;
+        margin-top: -90px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .smallheader label {
+        display: block;
+        margin-top: -50px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .header a img {
+        margin-left: 100px;
+    }
+    .header-menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin-top: 30px;
+    }
+    .header-menu ul li {
+        display: block;
+        border-bottom: 1px #fff solid;
+        padding: 3px;
+        background: #314a7e;
+    }
+    #toogle:checked + .header-menu {
+        display: block;
+        transition: all ease 04.s;
+    }
+    .contato {
+        display: block;
+        height: 800px;
+    }
+    .contato .redes-sociais {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .contato .redes-sociais img {
+        height: 45px;
+        width: 45px;
+        margin: 5px;
+    }
+    .contato .endereco {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
