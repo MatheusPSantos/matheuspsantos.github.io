@@ -20,20 +20,22 @@ img {
 .header {
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #314a7e;
     transition: all ease 0.7s;
+    overflow: initial;
 }
 
 .header a img {
-    margin: 5px;
+    margin: 10px;
     margin-left: 70px;
+    width: 40px;
     transition: all ease 0.7s;
 }
 
 /* menu que compacta */
 .header label {
-    margin: 0 40px 0 0;
+    padding-top: 20px;
     font-size: 28px;
     line-height: 70px;
     width: 30px;
@@ -46,7 +48,7 @@ img {
 }
 /* fim do menu que compacta */
 .header-menu {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: right;
     transition: all ease 0.7s;
 }
@@ -65,7 +67,7 @@ img {
     transition: all ease 0.3s;
 }
 
-.header-menu a:hover {
+.header-menu ul li:hover {
     box-shadow: 2px 4px 4px rgba(0,0,0,.3);
 }
 
@@ -76,6 +78,8 @@ img {
     width: 100%;
     position: fixed;
     transition: all ease 0.7s;
+    overflow: initial;
+    z-index: 1;
 }
 
 .smallheader a img {
@@ -102,7 +106,96 @@ img {
 #toogle {
     display: none;
 }
+
+/* Efeito de pulsação do botão */
+
+.btn {
+    width: 180px;
+    height: 20px;
+    padding: 10px;
+    margin-left: 390px;
+    top: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: initial;
+    z-index:0;
+}
+
+.btn a {
+    color: #fff;
+    position: relative;    
+}
+
+.pulse {
+    display: initial;
+    position: relative;
+    BACKGROUND: #5986e4;
+}
+
+.pulse::before {
+    content: '';
+    display: initial;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+}
+
+
 /* fim do menu que compacta */
+
+/* Textos de cada seção */
+/* A ideia é impedir que haja muitas palavras em cada linha */
+.section-text p {
+    width: 550px;
+    margin-left: 205px;
+}
 /*  Contato */
 
 .contato {
@@ -125,7 +218,7 @@ img {
     font-size: 20x;
     color: #fff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /**** formulario *****/
@@ -137,6 +230,7 @@ img {
     width: 100%;
     margin: 10px;
     height: 40px;
+    padding: 0;
 }
 
 .contato form textarea {
@@ -184,19 +278,23 @@ img {
     font-size: 20px;
     font-weight: 700;
 }
+.contato .endereco p 
+{
+    text-align: left;
+}
 
 /*  Rodapé  */
 
 .rodape {
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: #5986e4;
     color: #fff;
 }
 
 .rodape p {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
 }
 
@@ -204,6 +302,16 @@ img {
 @media only screen and (min-width: 769px) and (max-width: 959px) {
     .contato .redes-sociais img {
         height: 45px;
+    }
+        /* Textos de cada seção */
+    /* A ideia é impedir que haja muitas palavras em cada linha */
+    .section-text p {
+        width: 400px;
+        margin-left: 184px;
+    }
+    /* Efeito de pulsação do botão */
+    .btn {
+        margin-left: 294px;
     }
 }
 
@@ -218,18 +326,18 @@ img {
     }
     .smallheader label {
         display: block;
-        margin-top: -50px;
+        margin-top: -40px;
         cursor: pointer;
         color: #fff;
     }
     .header a img {
-        margin-left: 100px;
+        margin-left: 130px;
     }
     .header-menu {
         text-align: center;
         width: 100%;
         display: none;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .header-menu ul li {
         display: block;
@@ -237,9 +345,45 @@ img {
         padding: 3px;
         background: #314a7e;
     }
+    .header-menu-toogle {
+        text-align: left;
+        width: 100%;
+        margin-top: 15px !important;
+        padding: 0;
+        background-color: #00298098;
+        display: none;
+    }
+    .header-menu-toogle ul li {
+        display: block;
+        border-bottom: 1px #fff solid;
+        padding: 5px;
+        background-color: #00298098;
+    }
+    .header-menu-toogle ul li a {
+        color: #fff;
+        padding-left: 100px;
+    }
+
     #toogle:checked + .header-menu {
         display: block;
-        transition: all ease 04.s;
+        transition: all ease 0.4s;
+    }
+    #toogle:checked + .header-menu-toogle {
+        margin-top: 0px;
+        display: block;
+        background-color: #00298098;
+        transition: all ease 0.4s;
+    }
+
+    /* Pulsação do botão */
+    .btn {
+        margin-left: 60px;
+    }
+        /* Textos de cada seção */
+    /* A ideia é impedir que haja muitas palavras em cada linha */
+    .section-text p {
+        width: 290px;
+        margin-left: 5px;
     }
     .contato {
         display: block;

@@ -20,7 +20,7 @@
 
 .introducao h2{
     margin-top: 150px;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -56,10 +56,10 @@
 }
 
 .servicos p {
-    font-size: 20x;
+    font-size: 20px;
     color: #fff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .servicos-box {
@@ -133,7 +133,7 @@
 }
 
 .sobre .btn:hover {
-    background-color: green;
+    background-color: #314a7e;;
     box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 }
 
@@ -195,6 +195,6 @@
 
     .sobre-btn .btn {
         width: 300px;
-        margin: 85px;
+        margin: 70px;
     }
 }

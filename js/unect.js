@@ -16,3 +16,17 @@ $(document).on("scroll", function() {
         logo.src='img/logo.png';
     }
 });
+
+$(document).on("scroll", function() {
+    var scre = $("body").width();
+    if(scre <= 768) {
+        if($(document).scrollTop()>100) {
+            $("nav").removeClass("header-menu").addClass("header-menu-toogle");
+        }
+        else {
+            $("nav").removeClass("header-menu-toogle").addClass("header-menu");
+        }
+    } else if(scre >= 769) {
+        $("nav").removeClass("header-menu-toogle").addClass("header-menu");
+    }
+});

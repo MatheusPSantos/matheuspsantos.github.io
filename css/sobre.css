@@ -27,7 +27,7 @@
 
 .historia {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: #4060a5;
 }
 
@@ -43,7 +43,7 @@
 .historia p {
     font-size: 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
     color: #fff;
 }
 
@@ -78,7 +78,7 @@
 .unectianos p {
     font-size: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #314a7e;
 }
 
@@ -143,7 +143,7 @@
 .nossa-casa p {
     font-size: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #fff;
 }
 
