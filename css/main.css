@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* importando o reset */
+@import 'reset.css';
+/* importando a fonte que vai ser usada para titulos */
+@import '../fonts/quicksand.css';
+
+body {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+font-family: 'Quicksand', 'sans-serif';
+}
+
