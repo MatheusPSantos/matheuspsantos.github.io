@@ -21,6 +21,7 @@ font-family: 'Quicksand', 'sans-serif';
 .background-video video{
     min-width: 100%;
     min-height: 100%;
+    position: relative;
 }
 
 /* content */
