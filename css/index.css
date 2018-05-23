@@ -3,11 +3,7 @@
 /* importando o reset */
 @import 'reset.css';
 /* importando a fonte que vai ser usada para titulos */
-@import '../fonts/quicksand.css';
-
-h1,h2,h3,h4,h5 {
-font-family: 'Quicksand', 'sans-serif';
-}
+@import '../fonts/gilda_display.css';
 
 .background-video {
     position: absolute;
@@ -16,7 +12,7 @@ font-family: 'Quicksand', 'sans-serif';
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: red;
+    background: gray;
 }
 .background-video video{
     min-width: 100%;
@@ -24,14 +20,17 @@ font-family: 'Quicksand', 'sans-serif';
     position: relative;
 }
 
-/* content */
-.content-overlay {
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: gray;
-    position: absolute;
-    z-index: 1;
-    opacity: 0.4;
+.titles {
+    top: 400px; 
+}
+
+.titles h1 {
+    font-size: 30pt;
+    font-weight: bold;
+    color: white;
+}
+.titles h2 {
+    font-size: 22pt;
+    font-style: italic;
+    color: white;
 }
