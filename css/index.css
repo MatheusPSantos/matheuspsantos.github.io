@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: rgba(0,0,0,.4);
+  font-weight: 200;
+}
+
+h2 {
+  color: rgba(0,0,0,.6);
+}
+
+.header {
+  margin-top: 200px;
+}
+
+.navbar {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-top: 20%;
+}
+
+.navbar a {
+  margin: 5px;
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  font-weight: 800;
+  color: rgba(1, 8, 37, 0.5);
+  transition: all ease-in 0.2s;
+}
+
+.navbar a:hover {
+  color: rgba(1, 8, 37, 0.8);
+}
