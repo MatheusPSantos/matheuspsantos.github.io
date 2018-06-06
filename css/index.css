@@ -34,4 +34,5 @@ h2 {
 
 .navbar a:hover {
   color: rgba(1, 8, 37, 0.8);
+  cursor: pointer;
 }
