@@ -1,12 +1,42 @@
-<div id="projects">
+< id="projects">
   <h1>My projects</h1>
 	<h2>Here are my projects, both personal and professional.</h2>
 	
+	<ul class="row" id="content">
+
+	</ul>
+
 	<style>
 	
 	</style>
 
 	<script>
 		console.log('redirect to projects page ...');
+
+		var projects = [
+			{
+				name: "Projeto 1",
+				description: "descrição do projeto",
+				link: "link do projeto",
+			},
+			{
+				name: 'Projeto 2',
+				description: 'dscrição do projeto',
+				link: 'link do projeto',
+			}
+		];
+	console.log('adicionando mais um elemento');
+		var conteudo = document.getElementById('content');
+		var item = document.createElement('li');
+		
+		item.classList.add('col');
+		conteudo.appendChild('item');
+
 	</script>
+
+	<style>
+		#content {
+			border: solid 1px #000;
+		}
+	</style>
 </div>
