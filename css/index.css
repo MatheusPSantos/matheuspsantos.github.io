@@ -18,9 +18,9 @@ h2 {
 }
 
 .navbar {
+  position: fixed;
   text-align: center;
-  padding: 10px 0 10px 0;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .navbar a {
