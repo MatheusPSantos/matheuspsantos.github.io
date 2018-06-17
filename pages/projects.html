@@ -28,9 +28,29 @@
 		var conteudo = document.getElementById('content');
 		var item = document.createElement('li');
 		var text = document.createTextNode('item');
-		
+		var descricao;
+		var link;
+		var nome;
+		for(projeto in projects) {
+			item = document.createElement('li');
+			header3 = document.createElement('h3');
+			nome = document.createTextNode(projeto.name);
+			paragrafo = document.createElement('p');
+			descricao = document.createTextNode(projeto.descricao);
+			ancora = document.createElement('a');
+			link = document.createTextNode(projeto.link);
+			ancora.href=projeto.link;
+			header3.appendChild(nome);
+			paragrafo.appendChild(descricao);
+			ancora.appendChild(link);
+			
+			item.appendChild(nome);
+			item.appendChild(descricao);
+			item.appendChild(link);
+			
+			conteudo.appendChild(item);
+		}
 		item.classList.add('col');
-		conteudo.appendChild(item);
 
 	</script>
 
