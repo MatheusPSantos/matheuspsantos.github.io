@@ -31,14 +31,14 @@
 		var descricao;
 		var link;
 		var nome;
-		for(projeto in projects) {
+		for(elemento.projeto in projects) {
 			item = document.createElement('li');
 			header3 = document.createElement('h3');
-			nome = document.createTextNode(projeto.name);
+			nome = document.createTextNode(elemeneto.projeto.name);
 			paragrafo = document.createElement('p');
-			descricao = document.createTextNode(projeto.description);
+			descricao = document.createTextNode(elemento.projeto.description);
 			ancora = document.createElement('a');
-			link = document.createTextNode(projeto.link);
+			link = document.createTextNode(elemento.projeto.link);
 			ancora.href=projeto.link;
 			header3.appendChild(nome);
 			paragrafo.appendChild(descricao);
