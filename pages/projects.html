@@ -1,62 +1,32 @@
-  <h1>My projects</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MatheusPSantos | personal website</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+	<div id="projects" class="container">
+	<h1>My projects</h1>
 	<h2>Here are my projects, both personal and professional.</h2>
-	
-	<ul class="row" id="content">
-
-	</ul>
-
-	<style>
-	
-	</style>
-
-	<script>
-		console.log('redirect to projects page ...');
-
-		var projects = [
-			{
-				"name": "Projeto 1",
-				"description": "descrição do projeto",
-				"link": "link do projeto",
-			},
-			{
-				"name": "Projeto 2",
-				"description": "descrição do projeto",
-				"link": "link do projeto",
-			}
-		];
 		
-		var conteudo = document.getElementById('content');
-		var item = document.createElement('li');
-		var text = document.createTextNode('item');
-		var descricao;
-		var link;
-		var nome;
-		for(elemento.projeto in projects) {
-			item = document.createElement('li');
-			header3 = document.createElement('h3');
-			nome = document.createTextNode(elemeneto.projeto.name);
-			paragrafo = document.createElement('p');
-			descricao = document.createTextNode(elemento.projeto.description);
-			ancora = document.createElement('a');
-			link = document.createTextNode(elemento.projeto.link);
-			ancora.href=projeto.link;
-			header3.appendChild(nome);
-			paragrafo.appendChild(descricao);
-			ancora.appendChild(link);
-			
-			item.appendChild(nome);
-			item.appendChild(descricao);
-			item.appendChild(link);
-			
-			conteudo.appendChild(item);
-		}
-		item.classList.add('col');
+	<ul class="row" id="content"></ul>
 
-	</script>
-
-	<style>
-		#content {
-			border: solid 1px #000;
-		}
-	</style>
-</div>
+	</div>
+	  <!-- footer -->
+  <footer class="container" id="footer">
+    <div class="row justify-content-center">
+      <div class="navbar col">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>

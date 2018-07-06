@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 h1 {
@@ -19,8 +20,10 @@ h2 {
 
 .navbar {
   position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  margin-top: 10%;
+  padding: 10px 0 40px 0;
 }
 
 .navbar a {
