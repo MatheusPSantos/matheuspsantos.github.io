@@ -1,0 +1,14 @@
+#imagem-foto {
+   background-image: url('../assets/img/my-photo.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+
+.text-about {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 14pt;
+}
