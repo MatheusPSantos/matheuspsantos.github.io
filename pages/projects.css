@@ -5,5 +5,17 @@
 .item-projects {
     border: 1px solid;
     height: 200px;
-    left: -20px;
+    margin: 10px 0 10px 0;
+    list-style: none;
+    display: flex;
 }
+
+.one-project {
+    position: relative;
+}
+
+.name-project {
+    font-size: 13pt;
+    position: relative;
+}
+
