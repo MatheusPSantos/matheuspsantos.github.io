@@ -24,6 +24,7 @@ h2 {
   width: 100%;
   text-align: center;
   padding: 10px 0 40px 0;
+  background-color: #fff;
 }
 
 .navbar a {
@@ -36,6 +37,6 @@ h2 {
 }
 
 .navbar a:hover {
-  color: rgba(1, 8, 37, 0.8);
+  color: rgba(192, 4, 161, 0.8);
   cursor: pointer;
 }
