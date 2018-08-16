@@ -11,73 +11,86 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div class="container" id="main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-projects">My projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        </div>
+      </div>
     
-    <header class="header">
-      <h2>Matheus Pereira dos Santos</h2>
-      <h1>Full stack developer and Student</h1>
-    </header>
+  </nav>
 
-    <nav class="container">
-    <div class="row justify-content-center">
-      <div class="nav col">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="pages/about.html">About</a>
-          <a class="nav-link" href="pages/projects.html">Projects</a>
-          <a class="nav-link" href="pages/contact.html">Contact</a>
-      </div>
+  <header class="header container">
+    <h2>Matheus Pereira dos Santos</h2>
+    <h1>Full stack developer and Student</h1>
+  </header>
+
+  <section class="about container" id="about">
+    <h2>About me</h1>
+    <h3>Here you will know more about me, who I am and what I do.</h2>
+    
+    <div class="text-about col-md-6 justify-content-center">
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur illo alias fuga error deserunt aspernatur. Neque modi aspernatur, numquam autem odit nam deleniti error officiis sed voluptates? Odio, vero?
+      </p>  
     </div>
-    </nav>
+  </section>
 
-    <section class="row justify-content-md-center">
-      <h2>About me</h1>
-      <h3>Here you will know more about me, who I am and what I do.</h2>
-      
-      <div class="text-about col-md-6 justify-content-center">
-        <p class="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur illo alias fuga error deserunt aspernatur. Neque modi aspernatur, numquam autem odit nam deleniti error officiis sed voluptates? Odio, vero?
-        </p>  
-      </div>
-    </section>
+  <section class="my-projects container" id="my-projects">
+      <h2>My projects</h1>
+      <h3>Here are my projects, both personal and professional.</h2>
 
-    <section class="my-projects">
-        <h2>My projects</h1>
-        <h3>Here are my projects, both personal and professional.</h2>
+  </section>
 
-    </section>
+  <section class="contact container" id="contact">
+    <h2>Contact</h1>
+    <h3>Please contact me and we will do excellent projects :)</h2>
 
-    <setion class="contact">
-      <h2>Contact</h1>
-      <h3>Please contact me and we will do excellent projects :)</h2>
-  
-      <ul class="row">
-        <li class="col">
-          <a href="https://facebook.com/matheus064">
-            <img src="../assets/img/icons8-facebook-64.png" alt="contato através do meu facebook">
-          </a>
-        </li>
-        <li class="col">
-          <a>
-            <img src="../assets/img/icons8-gmail-64.png" alt="envie um e-mail">
-          </a>
-        </li>
-        <li class="col">
-          <a href="https://github.com/matheuspsantos">
-          <img src="../assets/img/icons8-github-64.png" alt="veja meus projetos e repositórios em meu github">
-          </a>
-        </li>
-        <li class="col">
-          <a href="https://instagram.com/matheus_psantos">
-          <img src="../assets/img/icons8-instagram-64.png" alt="Me siga no instagram"></a>
-        </li>
-        <li class="col">
-          <a href="https://twitter.com/matheus58693188">
-            <img src="../assets/img/icons8-twitter-64.png" alt="me siga no twitter">
-          </a>
-        </li>
-      </ul>
-    </setion>
+    <ul class="row">
+      <li class="col">
+        <a href="https://facebook.com/matheus064">
+          <img src="assets/img/icons8-facebook-64.png" alt="contato através do meu facebook">
+        </a>
+      </li>
+      <li class="col">
+        <a>
+          <img src="assets/img/icons8-gmail-64.png" alt="envie um e-mail">
+        </a>
+      </li>
+      <li class="col">
+        <a href="https://github.com/matheuspsantos">
+        <img src="assets/img/icons8-github-64.png" alt="veja meus projetos e repositórios em meu github">
+        </a>
+      </li>
+      <li class="col">
+        <a href="https://instagram.com/matheus_psantos">
+        <img src="assets/img/icons8-instagram-64.png" alt="Me siga no instagram"></a>
+      </li>
+      <li class="col">
+        <a href="https://twitter.com/matheus58693188">
+          <img src="assets/img/icons8-twitter-64.png" alt="me siga no twitter">
+        </a>
+      </li>
+    </ul>
+  </section>
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </html>
