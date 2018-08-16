@@ -14,29 +14,34 @@ h2 {
   color: rgba(0,0,0,.6);
 }
 
+h3 {
+  color: rgba(0,0,0,.7);
+}
+
+ul {
+  list-style: none;
+}
+
 .header {
   margin-top: 200px;
+  height: 500px;
 }
 
-.navbar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0 40px 0;
-  background-color: #fff;
+.about {
+  position: relative;
+  height: 600px;
 }
 
-.navbar a {
-  margin: 5px;
-  padding: 5px 0 5px 0;
-  text-decoration: none;
-  font-weight: 800;
-  color: rgba(1, 8, 37, 0.5);
-  transition: all ease-in 0.2s;
+.my-projects {
+  position: relative;
+  height: 600px;
+  text-align: right;
+
 }
 
-.navbar a:hover {
-  color: rgba(192, 4, 161, 0.8);
-  cursor: pointer;
+.contact {
+  position: relative;
+  height: 600px;
+
 }
+
