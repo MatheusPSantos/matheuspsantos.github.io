@@ -62,7 +62,7 @@ ul {
 
 @media only screen and (max-width: 500px) {
   .header h1 {
-    top: 100px;
+    top: 150px;
   }
   .header h2 {
     top: 390px;
