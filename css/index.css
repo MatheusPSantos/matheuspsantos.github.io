@@ -40,16 +40,34 @@ ul {
   height: 500px;}
 .header h2 {
   position: relative;
-  top: 280px;
+  top: 300px;
   color: white;
 }
 .header h1 {
   position: relative;
-  top: 300px;
+  top: 200px;
   color: white;
   font-weight: bold;
 }
+@media only screen and (max-width: 770px) 
+{
+  .header h1 {
+    top: 180px;
+  }
 
+  .header h2 {
+    top: 320px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header h1 {
+    top: 100px;
+  }
+  .header h2 {
+    top: 350px;
+  }
+}
 .about {
   position: relative;
   height: 600px;
