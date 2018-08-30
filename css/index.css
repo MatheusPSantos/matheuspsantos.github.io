@@ -40,12 +40,12 @@ ul {
   height: 500px;}
 .header h2 {
   position: relative;
-  top: 300px;
+  top: 280px;
   color: white;
 }
 .header h1 {
   position: relative;
-  top: 200px;
+  top: 300px;
   color: white;
   font-weight: bold;
 }
