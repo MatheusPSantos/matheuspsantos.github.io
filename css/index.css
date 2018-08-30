@@ -22,10 +22,32 @@ h3 {
 ul {
   list-style: none;
 }
-
+.start {
+  position: relative;
+  height: 700px;
+  top: 0px;
+  background-image: url('../assets/img/header-image.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+}
+.bg-purple {
+  background-color: #9a5b94;
+}
 .header {
-  margin-top: 200px;
-  height: 500px;
+  position: relative;
+  top: 0px;
+  height: 500px;}
+.header h2 {
+  position: relative;
+  top: 300px;
+  color: white;
+}
+.header h1 {
+  position: relative;
+  top: 200px;
+  color: white;
+  font-weight: bold;
 }
 
 .about {
