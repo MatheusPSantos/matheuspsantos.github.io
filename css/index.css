@@ -72,6 +72,18 @@ ul {
   position: relative;
   height: 600px;
 }
+.about h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: purple
+}
+.about h3 {
+  font-style: italic;
+}
+.about p {
+  margin-top: 30px;
+  margin-left: -10px;
+}
 
 .my-projects {
   position: relative;
