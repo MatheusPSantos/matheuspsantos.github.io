@@ -89,14 +89,30 @@ ul {
   position: relative;
   height: 600px;
   text-align: right;
-
 }
+
+.my-projects h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: purple;
+}
+.my-projects h3 {
+  font-style: italic;
+}
+
 
 .contact {
   position: relative;
   height: 600px;
 }
-
+.contact h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: purple;
+}
+.contact h3 {
+  font-style: italic;
+}
 .contact ul {
   margin-top: 90px;
 }
@@ -112,6 +128,7 @@ ul {
 .contact ul li p {
   margin-top: 35px;
   margin-left: 20px;
+  color: purple
 }
 
 .email {
