@@ -13,6 +13,8 @@ h1 {
 h2 {
   color: rgba(0,0,0,.6);
   margin-top: 10px;
+  border-top: 2px solid rgba(128, 0, 128, 0.479);
+  padding-top: 5px;
 }
 
 h3 {
@@ -37,43 +39,54 @@ ul {
 .header {
   position: relative;
   top: 0px;
-  height: 500px;}
+  height: 500px;
+}
 .header h2 {
+  border: none;
   position: relative;
   top: 300px;
   color: white;
 }
 .header h1 {
+  border: none;
   position: relative;
   top: 200px;
   color: white;
   font-weight: bold;
 }
+section .container {
+ margin-bottom: 20px;  
+}
 @media only screen and (max-width: 770px) 
 {
   .header h1 {
+    border: none;
     top: 180px;
   }
 
   .header h2 {
+    border: none;
     top: 320px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .header h1 {
+    border: none;
     top: 150px;
   }
   .header h2 {
+    border: none;
     top: 390px;
   }
 }
 .about {
   position: relative;
-  height: 600px;
+  top: 50px;
+  height: auto;
 }
 .about h2 {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: purple
 }
@@ -87,8 +100,8 @@ ul {
 
 .my-projects {
   position: relative;
-  height: 600px;
   text-align: right;
+  top: 50px;
 }
 
 .my-projects h2 {
@@ -99,11 +112,17 @@ ul {
 .my-projects h3 {
   font-style: italic;
 }
-
+.card-projects {
+  position: relative;
+  justify-content: center;
+  top: 50px;
+  bottom: 20px;
+}
 
 .contact {
   position: relative;
-  height: 600px;
+  height: auto;
+  top: 50px;
 }
 .contact h2 {
   margin-top: 50px;
@@ -145,18 +164,9 @@ ul {
 }
 
 .email input:active {
+  border: none;
   border-bottom: 2px solid rgba(3, 199, 248, 0.952);
 }
-
-.email input[type="submit"] {
-  border: 2px solid rgba(3, 199, 248, 0.952);
-  background: rgba(3, 138, 248, 0.952);
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
-}
-.email input[type="submit"]:active {
-  background: rgba(49, 153, 1, 0.897);
-  border: 1px solid white;
+.email input[type=submit] {
+  border: none;
 }
