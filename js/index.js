@@ -1,52 +1,39 @@
-// smooth scroll
-function smoothScroll(target, duration) {
-    var target = document.querySelector(target);
-    var targetPosition = target.getBoundingClientRect().top;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition - 50;
-    var startTime = null;
+function smoothScroll(event) {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute("href")==="#" ? "header" : event.currentTarget.getAttribute("href");
+  const targetPosition = document.querySelector(targetId).offsetTop;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition - 50; // 50 because of navbar height
+  const duration = 1000;
+  let start = null;
+  
+  window.requestAnimationFrame(step);
 
-    function animationScroll(currentTime) {
-        if(startTime===null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if(timeElapsed < duration) requestAnimationFrame(animationScroll);
-        
-    }
-
-    function ease(t, b, c, d) {
-        t /=d / 2;
-        if(t <1) return c/2 * t* t+b;
-        t--;
-        return -c / 2 * (t*(t-2) -1) + b;
-    }
-
-    requestAnimationFrame(animationScroll);
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    // window.scrollTo(0, distance*(progress/duration) + startPosition);
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
 }
 
-var start = document.getElementById('start');
-var about = document.getElementById('about');
-var myProjects = document.getElementById('my-projects');
-var contact = document.getElementById('contact');
+// Easing Functions
 
-start.addEventListener('click', function() {
-    smoothScroll('.start', 1500);
-});
+function linear(t, b, c, d) {
+	return c*t/d + b;
+};
 
-about.addEventListener('click', function() {
-    smoothScroll('.about', 1500);
-});
+function easeInOutQuad(t, b, c, d) {
+	t /= d/2;
+	if (t < 1) return c/2*t*t + b;
+	t--;
+	return -c/2 * (t*(t-2) - 1) + b;
+};
 
-contact.addEventListener('click', function() {
-    smoothScroll('.contact', 1500);
-});
-
-myProjects.addEventListener('click', function() {
-    smoothScroll('.my-projects', 1500);
-});
-
-
-
-
-
+function easeInOutCubic(t, b, c, d) {
+	t /= d/2;
+	if (t < 1) return c/2*t*t*t + b;
+	t -= 2;
+	return c/2*(t*t*t + 2) + b;
+};
