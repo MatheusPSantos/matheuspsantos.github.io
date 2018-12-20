@@ -19,17 +19,17 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="container">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item active" id="start">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="about">
             <a class="nav-link" href="#about">About me</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="my-projects">
             <a class="nav-link" href="#my-projects">My projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+          <li class="nav-item" id="contact">
+            <a class="nav-link"  href="#contact">Contact</a>
           </li>
         </ul>
         </div>
@@ -37,7 +37,7 @@
     
   </nav>
   <section class="start">
-    <header class="header container">
+    <header class="header container wow fadeIn">
       
       <h2>Matheus Pereira dos Santos</h2>
       <h1>Full stack developer and Student</h1>
@@ -47,7 +47,7 @@
 
   <div class="row"></div>
 
-  <section class="about" id="about">
+  <section class="about wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" id="about">
     <div class="container">
       <h2>About me</h2>
       <h3>Here you will know more about me, who I am and what I do.</h2>
@@ -66,7 +66,7 @@
 
   <div class="row"></div>
 
-  <section class="my-projects" id="my-projects">
+  <section class="my-projects wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" id="my-projects">
     <div class="container">
     
       <h2>My projects</h2>
@@ -113,7 +113,7 @@
   
   <div class="row"></div>
 
-  <section class="contact" id="contact">
+  <section class="contact wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" id="contact">
     <div class="container">
     <h2>Contact</h2>
     <h3>Please contact me and we will do excellent projects :)</h3>
@@ -176,6 +176,9 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 <script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+  new WOW().init();
+</script>
 </html>
