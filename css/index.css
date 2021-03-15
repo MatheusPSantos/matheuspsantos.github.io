@@ -29,7 +29,7 @@ ul {
   position: relative;
   height: 700px;
   top: 0px;
-  background-image: url('../assets/img/header-image.png');
+  background-image: url('/header-image.png');
   background-repeat: none;
   background-size: cover;
   background-position: bottom;
