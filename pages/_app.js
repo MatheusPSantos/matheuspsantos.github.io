@@ -7,6 +7,8 @@ import "../css/animate.css";
 import "../css/index.css";
 import { useEffect } from 'react';
 
+
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

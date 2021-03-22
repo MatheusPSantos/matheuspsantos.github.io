@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import MyProjects from '../components/my-projects';
 import Navbar from '../components/navbar';
 
+
 export default function HomePage() {
   return (
     <>
