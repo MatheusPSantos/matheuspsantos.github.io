@@ -9,16 +9,16 @@ function Navbar() {
         <div className="container">
           <ul className="navbar-nav">
             <li className="nav-item active" id="link-1">
-              <a className="nav-link" onclick="smoothScroll(event);" href="#">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link" onClick={() => "smoothScroll(event);"} href="#">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item" id="link-2">
-              <a className="nav-link" onclick="smoothScroll(event);" href="#about">About me</a>
+              <a className="nav-link" onClick={() => "smoothScroll(event);"} href="#about">About me</a>
             </li>
             <li className="nav-item" id="link-3">
-              <a className="nav-link" onclick="smoothScroll(event);" href="#my-projects">My projects</a>
+              <a className="nav-link" onClick={() => "smoothScroll(event);"} href="#my-projects">My projects</a>
             </li>
             <li className="nav-item" id="link-4">
-              <a className="nav-link" onclick="smoothScroll(event);" href="#contact">Contact</a>
+              <a className="nav-link" onClick={() => "smoothScroll(event);"} href="#contact">Contact</a>
             </li>
           </ul>
         </div>
