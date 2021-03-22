@@ -5,6 +5,7 @@ import "../css/bootstrap.min.css";
 import "../css/bootstrap-grid.min.css";
 import "../css/animate.css";
 import "../css/index.css";
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,16 +17,15 @@ function MyApp({ Component, pageProps }) {
         <title>MatheusPSantos | personal website</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="shortcut icon" href="/favicon.png" />
-
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7XQZHP6X2"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-V7XQZHP6X2');
-        `}} />
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'G-V7XQZHP6X2');
+          `}} />
       </Head>
 
       <Component {...pageProps} />
