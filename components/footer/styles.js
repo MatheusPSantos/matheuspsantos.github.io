@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterSection = styled.footer`
   display: flex;
   flex-direction: row;
-  background: #1f1f1f;
+  background: #303336;
   color: white;
   height: auto;
   width: 100%;
@@ -11,7 +11,7 @@ export const FooterSection = styled.footer`
   margin: 20px 0 0 0; 
   position: relative;
   text-decoration: none;
-  
+  justify-content: space-between;
 `;
 
 export const ColLinks = styled.div`

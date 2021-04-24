@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
           
           gtag('config', 'G-V7XQZHP6X2');
           `}} />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
       </Head>
 
       <Component {...pageProps} />
@@ -39,19 +39,6 @@ function MyApp({ Component, pageProps }) {
       <script type="text/javascript" src="js/index.js"></script>
       <script dangerouslySetInnerHTML={{
         __html: `new WOW().init();`
-      }} />
-      <script dangerouslySetInnerHTML={{
-        __html: `
-        if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-        }
-        `
       }} />
     </>
   );
