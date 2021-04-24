@@ -1,0 +1,20 @@
+{
+  "name": "matheuspsantos.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MatheusPSantos/matheuspsantos.github.io.git",
+  "author": "Matheus Pereira dos Santos <msantos.2015@alunos.utfpr.edu.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^10.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.2.3"
+  }
+}

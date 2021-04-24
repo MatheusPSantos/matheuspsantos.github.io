@@ -29,13 +29,15 @@ ul {
   position: relative;
   height: 700px;
   top: 0px;
-  background-image: url('../assets/img/header-image.png');
   background-repeat: none;
   background-size: cover;
   background-position: bottom;
+  background: rgb(156,4,96);
+  background: radial-gradient(circle, rgba(156,4,96,1) 0%, rgba(90,17,106,1) 57%);
 }
-.bg-purple {
-  background-color: #9a5b94;
+.bg-navbar {
+  background: #5a116a
+  
 }
 .header {
   position: relative;
