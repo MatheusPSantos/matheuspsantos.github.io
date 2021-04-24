@@ -1,3 +1,7 @@
+import Link, { } from 'next/link';
+import { FaGithubAlt } from 'react-icons/fa';
+
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
@@ -19,6 +23,9 @@ function Navbar() {
             </li>
             <li className="nav-item" id="link-4">
               <a className="nav-link" onClick={() => "smoothScroll(event);"} href="#contact">Contact</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/blog">Blog</a>
             </li>
           </ul>
         </div>

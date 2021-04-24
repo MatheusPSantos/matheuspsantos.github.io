@@ -6,9 +6,8 @@ function Contact() {
     <section id="contact" className="contact wow fadeIn">
       <div className="container">
         <h2>Contact</h2>
-        <h3>Please contact me and we will do excellent projects :)</h3>
+        <h3>Here are my contacts.</h3>
         <div style={{ display: "flex", flexDirection: "row" }} >
-
           <Social />
           <Form />
         </div>
