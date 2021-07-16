@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.container {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  top: 10vh;
+  height: 80vh;
+  border: 1px solid rgba(0, 0,0, 0.7);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nav-left {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  font-size: 1rem;
+
+}
+
+.nav-left a {
+  color: white;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+.nav-left a:hover {
+  border-bottom: 1px ridge white;
+} 
+
+.texts {
+  position: relative;
+  margin: 20px;
+}
+
+.last-posts, .top-list {
+  margin: 20px;
+  flex-direction: column;
+}
+
+.foo {
+}
