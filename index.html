@@ -37,35 +37,78 @@
 </head>
 
 <body>
-  <div class="content container">
-    <nav class="nav-left">
-      <a href="">Home</a>
-      <a href="">Blog</a>
-      <span>$ Contacts_</span>
-      <a href="">
-        <i class="fab fa-twitter-square"></i> twitter
-      </a>
-      <a href="">
+  <nav class="nav-left container">
+    <a href="/">Home</a>
+    <a href="/pages/blog.html">Blog</a>
+    <div id="nav-contact">
+      <span>$Contacts_</span>
+      <a href="https://github.com/matheuspsantos">
         <i class="fab fa-github"></i> github
       </a>
-    </nav>
-
-    <div class="texts">
+      <a href="https://twitter.com/msanto46">
+        <i class="fab fa-twitter-square"></i> twitter
+      </a>
+      <a href="https://www.instagram.com/matheus_psantos/">
+        <i class="fab fa-instagram"></i> insta
+      </a>
+    </div>
+  </nav>
+  <div class="content container">
+    <span id="tab-bar">
+      <span>
+        <i class="fas fa-window-minimize"></i>
+        <i class="far fa-window-maximize"></i>
+        <i class="fas fa-times"></i>
+      </span>
+      </span>
+    <div class="home-front">
       <h1><i class="fas fa-terminal"></i> Bem vindx !</h1>
 
-      <div class="last-posts">
-        <h2>Últimos posts:</h2>
-        <p>Não há nada por aqui por enquanto :(</p>
+      <div class="bio">
+        <p>Sou Estudante de Engenharia de Computação. Trabalho com desenvolvimento web desde 2019, com o foco
+          principalmente no front-end das aplicações. </p>
+        <p>Gosto de ler e escrever (um pouco) sobre tecnologia, programação, arte, história e o que mais vier em minha
+          mente.</p>
+
+        <p>Já trabalhei profissionalmente com as seguintes linguagens:</p>
+        <ul id="langs">
+          <li>
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> Css3</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+        </ul>
+        <p>Também já trabalhei com os seguintes frameworks e bibliotecas:</p>
+        <ul id="libs">
+          <li><i class="fab fa-node-js"></i> Node JS</li>
+          <li><i class="fab fa-react"></i> React JS</li>
+          <li><i class="fab fa-react"></i> NextJS</li>
+          <li><i class="fab fa-js"></i> NestJS</li>
+          <li><i class="fas fa-pepper-hot"></i> Flask</li>
+          <li><i class="fab fa-java"></i> Spring MVC</li>
+          <li><i class="fab fa-js"></i> AdonisJS</li>
+        </ul>
+
+        <p>Abaixo você pode conferir minhas postagens mais recentes e mais lidas. Ao lado estão minhas redes sociais.
+        </p>
+        <p>Obrigado pela visita e volte sempre <i class="far fa-smile"></i>.</p>
       </div>
 
-      <div class="top-list">
-        <h2>Mais lidos:</h2>
-        <p>Não há nada por aqui por enquanto :(</p>
-      </div>
+      <section id="posts">
+        <div id="last-posts">
+          <h2>Últimos posts:</h2>
+          <p>Não há nada por aqui por enquanto :(</p>
+        </div>
+
+        <div id="top-list">
+          <h2>Mais lidos:</h2>
+          <p>Não há nada por aqui por enquanto :(</p>
+        </div>
+      </section>
 
     </div>
   </div>
-  <footer class="foo container">
+  <footer class="foo">
     matheuspsantos |
     <script> document.write(new Date().getFullYear())</script>
   </footer>
