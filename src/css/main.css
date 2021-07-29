@@ -27,6 +27,14 @@ ul {
   left:90px;
 }
 
+#mobile-header {
+  display: none;
+}
+
+#burguer-button {
+  display: none;
+}
+
 .nav-left {
   position: fixed;
   height: 80vh;
@@ -50,6 +58,8 @@ ul {
 .nav-left a:hover {
   border-bottom: 1px ridge white;
 }
+
+#close-menu { display: none; }
 
 #nav-contact  {
   border-top: 1px solid #fff;
