@@ -1,0 +1,26 @@
+@media only screen and (max-width: 320px) {
+    .container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    .nav-left {
+        position: fixed;
+        z-index: 2;
+        height: 100vh;
+        width: 30vw;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    #nav-contact {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+}
