@@ -30,6 +30,10 @@
       }
 
     .nav-left {
+        display: none;
+    }
+
+    .nav-left-enabled {
         position: fixed;
         z-index: 2;
         height: 100vh;
@@ -37,13 +41,18 @@
         flex-direction: column;
         padding: 20px;
         align-items: flex-start;
+        color: white;
         transition: ease-in-out 0.3s;
-        display: none;
+        background-color: rgb(27, 27, 27);
     }
 
-    .nav-left-disabled {
-        display: none;
-        transition: ease-in-out 0.3s;
+    .nav-left-enabled a {
+        color: white;
+        margin: 10px 0;
+    }
+
+    .nav-left-enabled a:active {
+        background: rgba(100, 100, 100, 0.4);
     }
 
     #close-menu {
