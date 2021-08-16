@@ -214,3 +214,9 @@ ul {
   margin: 5px auto;
   list-style: square !important;
 }
+
+.post-text img {
+  position: relative;
+  width: 90%;
+  height: auto;
+}
