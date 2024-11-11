@@ -1,0 +1,156 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f20;
+  color: #e0e0f0;
+  margin: 0;
+}
+
+.header-mps, .footer, .cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #151530;
+}
+
+.header-mps .logo {
+  font-size: 1.5rem;
+  color: #48e1ec;
+}
+
+nav a {
+  color: #e0e0f0;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.cta-button {
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(45deg, #48e1ec, #e048ec);
+  border: none;
+  padding: auto;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-mps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #151530, #0f0f20);
+  color: #e0e0f0;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+}
+.hero-buttons a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.services, .demo, .clients, .solutions, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services h2, .demo h2, .clients h2, .solutions h2, .contact h2 {
+  font-size: 2rem;
+  color: #48e1ec;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-item {
+  background: #151530;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #48e1ec;
+}
+
+.clients {
+  margin: 20px 80px;
+}
+
+.clients .clients-slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  scroll-behavior: auto;
+}
+
+.clients .clients-slider img {
+  width: 150px;
+}
+
+.solutions-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.solutions-card {
+  padding: 1rem;
+  background: #e0e0f0;
+  border-radius: 8px;
+  width: 20%;
+}
+
+.highlighted {
+  background: linear-gradient(45deg, #48e1ec, #e048ec);
+  color: #fff;
+}
+
+.contact .cta {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #151530;
+}
+
+.social-links a {
+  color: #48e1ec;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
