@@ -1,140 +1,544 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MPS Tecnologia</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="mps-logo.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>MPS Tecnologia - Consultoria e Desenvolvimento de Software</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="css/color.css">
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="mps">
-  <!-- Header Section -->
-  <header class="header-mps">
-    <div class="logo">
-      <img src="./mps-novo-logo.png" width="124" height="auto" alt="">
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--End of Preloader-->
+
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+        </div>
+        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
     </div>
 
-    <nav>
-      <!-- <a href="#features">Features</a> -->
-      <a href="#solutions">Soluções</a>
-      <a href="#services">Sobre</a>
-      <a href="#contact">Contato</a>
-    </nav>
-    <!-- <button class="cta-button">Get Started</button> -->
-  </header>
+    <div id="wrapper">
 
-  <!-- Hero Section -->
-  <section class="hero-mps">
-    <h1>Bem vindo à fonte das suas soluções</h1>
-    <p>Somos especialistas em imaginar, criar e entregar soluções que impactam.</p>
-    <div class="hero-buttons">
-      <a href="#services" class="cta-button">Conhecer mais</a>
-      <a href="#contact" class="cta-button">Entre em Contato</a>
+        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" class="nav-collapse">
+                <div class="row clearfix">
+                    <div class="col-1">
+
+                        <!--Logo-->
+                        <div id="logo">
+                            <img src="images/mps-logo.png" id="banner-logo" alt="MTS Tecnologia" />
+                            <!--The Logo that is shown on the sticky Navigation Bar-->
+                            <img src="images/mps-logo.png" id="navigation-logo" alt="MTS Tecnologia" />
+                        </div>
+                        <!--End of Logo-->
+
+                        <aside>
+
+                            <!--Social Icons in Header-->
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                                        <i class="fa fa-twitter-square fa-1x"></i><span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <!--End of Social Icons in Header-->
+
+                        </aside>
+
+                        <!--Main Navigation-->
+                        <nav id="nav-main">
+                            <ul>
+                                <li>
+                                    <a href="#banner">Início</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Sobre</a>
+                                </li>
+                                <!-- <li>
+                                <a href="#gallery">P</a>
+                            </li> -->
+                                <li>
+                                    <a href="#services">Serviços</a>
+                                </li>
+                                <!-- <li>
+                                <a href="#testimonials">Testimonials</a>
+                            </li> -->
+                                <li>
+                                    <a href="#clients">Clientes</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#pricing">Preços</a>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <!--End of Main Navigation-->
+
+                        <div id="nav-trigger"><span></span></div>
+                        <nav id="nav-mobile"></nav>
+
+                    </div>
+                </div>
+            </div>
+            <!--End of Header-->
+
+            <!--Banner Content-->
+            <div id="banner-content" class="row clearfix">
+
+                <div class="col-38">
+
+                    <div class="section-heading">
+                        <h1>FAZEMOS A TECNOLOGIA TRABALHAR PARA VOCÊ</h1>
+                        <h2>
+                            Criamos soluções tecnológicas que irão posicionar o seu negócio à frente da concorrência.
+                        </h2>
+                    </div>
+
+                    <!--Call to Action-->
+                    <a href="#" class="button">MARQUE UMA CONSULTORIA AGORA</a>
+                    <!--End Call to Action-->
+
+                </div>
+
+            </div>
+            <!--End of Row-->
+        </header>
+
+        <!--Main Content Area-->
+        <main id="content">
+
+            <!--Introduction-->
+            <section id="about" class="introduction scrollto">
+
+                <div class="row clearfix">
+
+                    <div class="col-3">
+                        <div class="section-heading">
+                            <h3>SUCESSO</h3>
+                            <h2 class="section-title">
+                                Nós Ajudamos Você a Desenvolver o Seu Produto
+                            </h2>
+                            <p class="section-subtitle">
+                                Através das tecnologias mais atuais do mercado de Software podemos desenvolver e lançar
+                                os seus produtos. Focamos na qualidade e rapidez das entrega.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2-3">
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-html5 fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>HTML5 &amp; CSS3</h4>
+                                <p>Usamos as tecnologias de ponta para focar em desenvolver e
+                                    lançar
+                                    sites incríveis.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-bolt fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Velocidade</h4>
+                                <p>Focamos na velocidade de planejar, modelar e desenvolver as
+                                    soluções.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-paint-brush fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Personalizado</h4>
+                                <p>Atendemos as demandas pontuais e as complexidades que só o seu negócio possui.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.7s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-rocket fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Qualidade de entrega</h4>
+                                <p>Focamos na qualidade da entrega, aplicando as metodologias de projetos mais atuais da
+                                    Engenharia de Software.</p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--End of Introduction-->
+
+
+            <!--Gallery-->
+            <!-- <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+                 data-featherlight-filter="a">
+
+                <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.3s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="1.1s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
+
+        </aside> -->
+            <!--End of Gallery-->
+
+
+            <!--Content Section-->
+            <div id="services" class="scrollto clearfix">
+
+                <div class="row no-padding-bottom clearfix">
+
+
+                    <!--Content Left Side-->
+                    <div class="col-3">
+                        <!--User Testimonial-->
+                        <blockquote class="testimonial text-right bigtest">
+                            <q>Um Empreendedor vê oportunidades onde os outros só vêem problemas.</q>
+                            <footer>— Michael Gerber, Escritor</footer>
+                        </blockquote>
+                        <!-- End of Testimonial-->
+
+                    </div>
+                    <!--End Content Left Side-->
+
+                    <!--Content of the Right Side-->
+                    <div class="col-3">
+                        <div class="section-heading">
+                            <h3>ACREDITAMOS</h3>
+                            <h2 class="section-title">Focamos no mais importante</h2>
+                            <p class="section-subtitle">Procuramos entender os problemas de nossos clientes para
+                                atendê-los da melhor forma possível.</p>
+                        </div>
+                        <p>Focamos todo nosso esforço e trabalho para <b>PLANEJAR</b> e <b>MODELAR</b> soluções que
+                            <b>RESOLVEM</b> as dores dos clientes do seu negócio, sejam eles os consumidores finais, os
+                            colaboradores dentro do escritório ou o próprio Empreendedor.
+                        </p>
+
+                        <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+                        <!-- <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube"
+                            class="button video link-lightbox">
+                            WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
+                        </a> -->
+                    </div>
+                    <!--End Content Right Side-->
+
+                    <div class="col-3">
+                        <img src="images/services.png" alt="Serviços" />
+                    </div>
+
+                </div>
+
+            </div>
+            <!--End of Content Section-->
+
+            <!--Testimonials-->
+            <aside id="testimonials" style="display: none;" class="scrollto text-center" data-enllax-ratio=".2">
+
+                <div class="row clearfix">
+
+                    <div class="section-heading">
+                        <h3>FEEDBACK</h3>
+                        <h2 class="section-title">O que os nossos clientes estão dizendo</h2>
+                    </div>
+
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/user-1.jpg" alt="User" />
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua</q>
+                        <footer>John Doe - Happy Customer</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/user-2.jpg" alt="User" />
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua</q>
+                        <footer>Roslyn Doe - Happy Customer</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/user-3.jpg" alt="User" />
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua</q>
+                        <footer>Thomas Doe - Happy Customer</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                </div>
+
+            </aside>
+            <!--End of Testimonials-->
+
+            <!--Clients-->
+            <section id="clients" class="scrollto clearfix">
+                <div class="row clearfix">
+
+                    <div class="col-3">
+
+                        <div class="section-heading">
+                            <h3>CONFIANÇA</h3>
+                            <h2 class="section-title">Empresas que usam nosso serviços</h2>
+                            <p class="section-subtitle">
+                                Essas são algumas das empresas que confiaram em nosso serviços e digitalizaram seus
+                                negócios, resolveram seus problemas e aumentaram a sua competitividade.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="col-2-3">
+
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo1.png" alt="Company" />
+                            <div class="client-overlay"><span>Tree</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo2.png" alt="Company" />
+                            <div class="client-overlay"><span>Fingerprint</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo3.png" alt="Company" />
+                            <div class="client-overlay"><span>The Man</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo4.png" alt="Company" />
+                            <div class="client-overlay"><span>Mustache</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo5.png" alt="Company" />
+                            <div class="client-overlay"><span>Goat</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo6.png" alt="Company" />
+                            <div class="client-overlay"><span>Justice</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo7.png" alt="Company" />
+                            <div class="client-overlay"><span>Ball</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo8.png" alt="Company" />
+                            <div class="client-overlay"><span>Cold</span></div>
+                        </a>
+
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo9.png" alt="Company" />
+                            <div class="client-overlay"><span>Cold</span></div>
+                        </a>
+
+                    </div> -->
+
+                </div>
+            </section>
+            <!--End of Clients-->
+
+            <!--Pricing Tables-->
+            <section id="pricing" style="display: none" class="secondary-color text-center scrollto clearfix ">
+                <div class="row clearfix">
+
+                    <div class="section-heading">
+                        <h3>YOUR CHOICE</h3>
+                        <h2 class="section-title">We have the right package for you</h2>
+                    </div>
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>Personal</h3>
+                            <p class="pricing-sub">The standard version</p>
+                            <div class="pricing">
+                                <div class="price"><span>$</span>19</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                            <ul>
+                                <li>5 Downloads</li>
+                                <li>2 Extensions</li>
+                                <li>Tutorials</li>
+                                <li>Forum Support</li>
+                                <li>1 year free updates</li>
+                            </ul>
+                            <a href="#" class="button">BUY TODAY</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="pricing-block-content">
+                            <h3>Student</h3>
+                            <p class="pricing-sub">Most popular choice</p>
+                            <div class="pricing">
+                                <div class="price"><span>$</span>29</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                            <ul>
+                                <li>15 Downloads</li>
+                                <li>5 Extensions</li>
+                                <li>Tutorials with Files</li>
+                                <li>Forum Support</li>
+                                <li>2 years free updates</li>
+                            </ul>
+                            <a href="#" class="button">BUY TODAY</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="pricing-block-content">
+                            <h3>Business</h3>
+                            <p class="pricing-sub">For the whole team</p>
+                            <div class="pricing">
+                                <div class="price"><span>$</span>49</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                            <ul>
+                                <li>Unlimited Downloads</li>
+                                <li>Unlimited Extensions</li>
+                                <li>HD Video Tutorials</li>
+                                <li>Chat Support</li>
+                                <li>Lifetime free updates</li>
+                            </ul>
+                            <a href="#" class="button">BUY TODAY</a>
+                        </div>
+                    </div>
+                    <!--End Pricing Block-->
+
+                </div>
+            </section>
+            <!--End of Pricing Tables-->
+
+        </main>
+        <!--End Main Content Area-->
+
+
+        <!--Footer-->
+        <footer id="landing-footer" class="clearfix">
+            <div class="row clearfix">
+
+                <p id="copyright" class="col-2">MPS Tecnologia LTDA. <span id="currentYear"></span> </p>
+
+                <!--Social Icons in Footer-->
+                <ul class="col-2 social-icons">
+                    <li>
+                        <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                            <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                            <i class="fa fa-twitter-square fa-1x"></i><span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                            <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!--End of Social Icons in Footer-->
+            </div>
+        </footer>
+        <!--End of Footer-->
+
     </div>
-  </section>
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
 
-  <section id="services" class="services">
-    <h2>Nossos Serviços</h2>
-    <div class="service-grid">
-      <div class="service-item">
-        <i class="icon">🖥️</i>
-        <h3>Desenvolvimento de Software</h3>
-        <p>Aplicações sob medida para as necessidades do seu negócio.</p>
-      </div>
-      <div class="service-item">
-        <i class="icon">🔍</i>
-        <h3>Consultoria em TI</h3>
-        <p>Apoio estratégico e técnico para alcançar os objetivos da sua empresa.</p>
-      </div>
-      <div class="service-item">
-        <i class="icon">💼</i>
-        <h3>Evolução de Aplicações</h3>
-        <p>Integração e otimização das suas aplicações mais importantes.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product Demo Section -->
-  <!-- <section id="demo" class="demo">
-    <h2>See Our Product in Action</h2>
-    <video src="demo-video.mp4" controls autoplay loop></video>
-  </section> -->
-
-  <!-- Pricing Section -->
-  <section id="solutions" class="solutions">
-    <h2>Conheça nossas soluções</h2>
-    <div class="solutions-cards">
-      <div class="solutions-card">
-        <h3>Paleta App 📱</h3>
-        <p>Um app que promete impulsionar o número de clientes fidelizados ao seu negócio!</p>
-        <p></p>
-        <button style="width: 80%; margin: auto;" class="cta-button">Saiba mais</button>
-      </div>
-      <div class="solutions-card highlighted">
-        <h3>Construção De Sites</h3>
-        <p>Construimos e gerenciamos o site do seu empreedimento, com qualidade, dedicação e exclusividade.</p>
-        <button style="width: 80%; margin: auto" href="#contact" class="cta-button">Entre em contato</button>
-      </div>
-      <div class="solutions-card">
-        <h3>Consultoria</h3>
-        <p>Realizamos Consultoria especializada.</p>
-        <p>Levantamos as demandas do seu negócio, prototipamos a solução.</p>
-        <button class="cta-button">Saiba mais</button>
-      </div>
-    </div>
-  </section>
-  <!-- Clients Section -->
-  <section id="clients" class="clients">
-    <h2>Conheça nossos clientes</h2>
-    <!-- <div class="clients-slider">
-      <div class="clients">
-        <img src="./logo-01.png" alt="">
-      </div>
-      <div class="clients">
-        <img src="./logo-02.png" alt="">
-      </div>
-      <div class="clients">
-        <img src="./logo-03.png" alt="">
-      </div>
-      <div class="clients">
-        <img src="./logo-01.png" alt="">
-      </div> -->
-      <div>
-        <p>👷🏼‍♀️ Essa área ainda está em construção 🚧</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Entre em contato</h2>
-    <p>Entre em contato para entendermos as suas dores e como podemos ajudar você a impactar e alavancar seus
-      empreendimentos.</p>
-    <p>Estamos a um Whatsapp de distância.</p>
-    <div class="cta">
-      <a style="text-decoration: none" href="https://wa.me/5543999168300" class="cta-button">
-        Mande-nos uma mensagem&nbsp;&nbsp;
-        <img src="whatsapp.svg" alt="">
-      </a>
-    </div>
-
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="social-links">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-    </div>
-    <p>&copy; 2024 Futuro. All rights reserved.</p>
-  </footer>
-
+    <script>
+        document.querySelector("#currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>
